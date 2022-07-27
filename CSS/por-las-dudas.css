@@ -1,0 +1,1044 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*selectores de etiqueta*/
+
+html{
+    font-size: 62.5%;
+}
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Diseño del body*/
+
+body{
+    background-color: #2C3333;
+    background-repeat: repeat;
+    background-attachment: fixeo;
+    background-size: cover;
+    
+}
+
+
+/*Diseño de la nav*/
+ nav{
+    /*FONDO*/
+    background-color: #2C3333 ;
+   /*POSITION*/
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*FLEX*/
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+        nav ul{
+           display: flex;
+       }
+ 
+
+           nav ul li{
+               list-style: none;
+               margin-right: 20px;
+           }
+
+
+               nav ul li a{
+                   font-size: 2.5rem;
+                   text-decoration: none;
+                   color: #F5F2E7;                  
+               }
+
+                nav ul li a:hover{
+                   color: #8E806A;
+                   font-weight: 600;
+                }
+
+                
+ /*Diseño de main "CONOCENOS"*/
+
+/*titulo del inicio*/
+  .encabezado_caja-text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    padding: 7px 0;
+  }
+
+
+
+#nosotros{
+    font-family: 'Roboto', sans-serif;
+}
+
+   #nosotros h2{
+      font-size: 4rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #FFF9D7 ;
+      text-align: center;
+      margin: 35px;
+   }
+
+    #nosotros .conocenos .odontologos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .odontologos_texto{
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      margin-top: 35px;
+      overflow-y: auto;
+    
+   }
+
+     #nosotros figcaption{
+      font-size: 2rem;
+      color: #F5F2E7;
+      margin-top: 15px;
+      text-align: center;
+   }
+
+    #nosotros p{
+      text-align: center;
+      margin: 15px 10px;
+      font-size: 3rem;
+      color: #F5F2E;
+      overflow-y: auto;
+      color: #F5F2E7;
+
+    }
+
+    #nosotros .odontologos img{
+      background-image:url(../IMAGENES/fondos/fondo-nosotros.png) ;
+      padding: 25px;
+   }
+.grid_conocenos{
+    width: 50%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: "primera segunda segunda"
+                         "primera tercera cuarta"
+}
+
+.primera-imagen, .segunda-imagen, .tercera-imagen, .cuarta-imagen{
+    width: 100%;
+    height: 100%;
+
+}
+
+.imagen-uno{
+    grid-area: primera;
+}
+.imagen-dos{
+    grid-area: segunda;
+}
+.imagen-tres{
+    grid-area: tercera;
+}
+.iagen-cuatro{
+    grid-area: cuatro;
+}
+
+/*Diseño"INDEX"*/
+
+#tratamientos{
+    font-family: 'Roboto', sans-serif;
+    grid-area: tratamientos;
+
+}
+
+
+  #tratamientos h1{
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      color: #FFF9D7;
+      font-size: 4rem;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+      padding-top: 10px;
+      padding-bottom: 30px
+  }
+
+  #tratamientos h2{
+      font-size: 2.5rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #DDDDDD ;
+      text-align: center;
+  }
+
+  .presentacion{
+    grid-area: presentacion;
+  }
+
+.presentacion{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 10px 20px;
+      margin: 35px 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      overflow-y: auto;
+ }
+
+    .presentacion p{
+        font-size: 4rem;
+        margin-left: 25px;
+        margin-top: 25px;
+        padding-top: 35px;
+        text-align: center;
+        color: #F5F2E7;
+        overflow-y: auto;
+
+ }
+
+#tratamientos .tratamientos-especificos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "tratamiento1 tratamiento1 ."  
+                         ". tratamiento2 tratamiento2"
+                         "tratamiento3 tratamiento3 ."
+                         ". tratamiento4 tratamiento4"
+                         "tratamiento5 tratamiento5 ."
+                         ". tratamiento6 tratamiento6"
+                         "tratamiento7 tratamiento7 .";
+
+
+
+}
+
+
+
+#tratamientos .tratamientos-especificos p{
+    font-size: 2.3rem;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    color: #F5F2E7;
+
+}
+
+.odontologia-general, .urgencias, .protesis, .ortodoncia-ortopedia, .implantes, .odontopediatria,
+.endodoncia{
+    padding: 15px;
+    width: 90%;
+    margin: 20px;
+    border-bottom: solid 5px #F5F2E7;
+
+    
+
+}
+
+.urgencias, .protesis, .odontopediatria, .ortodoncia-ortopedia{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.odontologia-general, .endodoncia, .implantes{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color:rgba(0, 0, 0, 0.7);
+    
+    
+
+}
+
+.odontologia-general{
+    grid-area: tratamiento2;
+}
+.endodoncia{
+    grid-area: tratamiento4;
+}
+.implantes{
+    grid-area: tratamiento6;
+}
+.urgencias{
+    grid-area: tratamiento1;
+}
+.protesis{
+    grid-area: tratamiento3;
+}
+.odontopediatria{
+    grid-area: tratamiento5;
+}
+.ortodoncia-ortopedia{
+    grid-area: tratamiento7;
+}
+
+
+/*Diseño concultorio*/
+
+#consultorio{
+    font-family: 'Roboto', sans-serif
+
+}
+
+  #consultorio h2{
+      font-size: 4rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: #FFF9D7 ;
+      text-align: center;
+      margin: 20px;
+ }
+
+  #consultorio .consul_imagenes img{
+      width: 12%;
+      margin: 10px;
+      overflow-y: auto;
+
+ }
+
+  #consultorio .consul_imagenes{
+     display: flex;
+     justify-content: space-evenly;
+     align-content: ;
+     flex-wrap: wrap;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+  #consultorio p{
+      font-size: 3.2rem;
+      padding: 15px;
+      margin: 10px;
+      text-align: center;
+      color: #F5F2E7;
+      overflow-y: auto;
+
+ }
+
+  #consultorio iframe{
+      width: 25%;
+ }
+ 
+
+/*Diseño "PREGUNTAS FRECEUNTES"*/
+
+#preguntas-frecuentes{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+  #preguntas-frecuentes h3{
+      font-size: 2.5rem;
+      padding: 10px;
+      margin: 20px 10px;
+      color: #2666CF;
+ }
+
+  #preguntas-frecuentes p{
+      font-size: 2rem;
+      padding: 20px;
+      margin: 20px 10px;    
+      color: #F5F2E7;
+      overflow-y: auto;
+ }
+
+  #preguntas-frecuentes .preguntas_textos div{
+      background-color: rgba(0, 0, 0, 0.4);
+ } 
+
+
+/*Diseño"AGENDA AHORA"*/
+
+#agenda-ahora{
+    font-family: 'Roboto', sans-serif
+
+}
+  #agenda-ahora h2{
+      font-size: 4rem;
+      padding: 20px 15px;
+      color: #FFF9D7 ;
+      text-align: center;
+      margin: 20px;
+
+ }
+
+  #agenda-ahora .formulario{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+      margin-top: 15px;
+
+ }
+  #agenda-ahora .name_email{
+      display: flex;
+      flex-direction: column;
+ }
+
+  #agenda-ahora label{
+     margin-top: 15px;
+     ;
+ }
+  #agenda-ahora legend{
+      margin: 15px;
+ }
+  #agenda-ahora input{
+      margin: 15px;
+      font-size: 2rem;
+      outline: none;
+
+ }
+  #agenda-ahora textarea{
+      font-size: 2rem;
+      width: 80%;
+      margin: 10px;
+ }
+
+  section form{
+      font-size: 4rem;
+      line-height: 3rem;
+     ;
+ }
+
+  .agenda_formulario{
+      width: 70%;
+      height: auto;
+      background-color: #395B64;
+      padding: 15px;
+      color: #F5F2E7;     
+ }
+
+  .formulario_seleccion{
+      font-size: 2rem;
+ }
+
+/*Diseño header*/
+
+.encabezado_img--fluido{
+    width: 100%;
+}
+ 
+
+ /*Diseño footer*/
+
+ footer{
+    background-image: url(../IMAGENES/fondos/fondo-odontologos.png);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7rem;
+  }
+
+
+
+
+
+header{
+    height: 100vh;
+    background-size: cover;
+    animation-name: animateHeader;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateHeader{
+    0%{background-image: url(../IMAGENES/fondos/fondo-header.jpg)}
+    50%{background-image: url(../IMAGENES/fondos/fondo-header-two.jpg)}
+    100%{background-image: url(../IMAGENES/fondos/fondo-header-three.jpg)}
+}
+
+
+<h2>Consultorio</h2>
+        <section>
+        
+            <article class="consul_imagenes">             
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-primera.jpg" alt="foto de balcon">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-tercera.jpg" alt="sillon odontologico">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-segunda.jpg" alt="home de atencion">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-cuarta.jpg" alt="home de atencion de otro angulo">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-quinta.jpg" alt="foto de un baño">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-sexta.jpg" alt="foto de balcon en la noche">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-septima.jpg" alt="odontologa acostada con balcon de fondo">
+                    <img src="../IMAGENES/consultorio-fotos/foto-consul-octava.jpg" alt="home de espera">                               
+            </article>
+            <article>
+                    <p> En nuestro lugar de trabajo siempre vas a encontrar un lugar agradable, limpio y con la mejor energia para que te sientas como en tu casa</p>
+            </article>
+
+        </section>                                      
+            
+            <div class="iframes">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.851911623201!2d-58.436516685053085!3d-34.58261346388826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb591ffa02069%3A0xb9b3deb21c6b22b1!2sFitz%20Roy%201925%2C%20C1414CIC%20CABA!5e0!3m2!1ses!2sar!4v1655398937958!5m2!1ses!2sar" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                                                         
+            </div>
+
+
+
+
+    #consultorio{
+        font-family: 'Roboto', sans-serif;
+    }
+      #consultorio h2{
+            font-size: 2.7rem;
+            padding: 10px;
+            text-align: center;
+            color: #FFF9D7;
+            margin-top: 15px;
+            margin-bottom: 10px;
+      }
+
+      #consultorio .consul_imagenes img{
+        width: 50%;
+      }
+
+      #consultorio .consul_imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+                
+      }
+
+      #consultorio p{
+        color: #F5F2E7;
+        font-size: 1.7rem;
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+      }
+
+      .iframes iframe{
+        width: 100%;
+      }
+
+
+nav{
+     background-color: #2C3333 ;
+     position: sticky;
+     top: 0;
+
+
+
+    }
+         nav ul{
+            display: flex;
+            justify-content: center;
+            padding: 5px;                          
+            }
+  
+
+            nav ul li{
+                list-style: none;
+                ;
+                   
+            }
+
+
+                nav ul li a{
+                    font-size: 1.2rem;
+                    margin-right: 7px;
+                    text-decoration: none;
+                    color: #F5F2E7;
+                }
+
+                nav ul li a:hover{
+                    color: #8E806A;
+                    font-weight: 600;
+                 }
+
+
+
+
+
+
+
+
+   #consultorio .consul_imagenes img{
+        width: 18%;
+      }
+
+   #consultorio .consul_imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        
+                
+      }
+
+
+
+
+
+#consultorio .consul_imagenes img{
+        width: 12%;
+        overflow-y: auto;
+      }
+
+    #consultorio .consul_imagenes{
+     display: flex;
+     justify-content: space-evenly;
+     align-content: ;
+     flex-wrap: wrap;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+
+
+
+
+
+    <nav>
+        <div class="logo_animation">
+            <a href="../index.html">
+                <img src="../IMAGENES/icono-logo/logo.png" alt="logo de un diente de color rojo">
+            </a>
+        </div> 
+            <ul>
+                <li>
+                    <a href="conocenos.html">Conocenos</a>
+                </li>
+                <li>
+                    <a href="consultorio.html">Consultorio</a>
+                </li>
+                <li>
+                    <a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="agenda-ahora.html">Agenda ahora</a>
+                </li>
+            </ul>
+    </nav>
+
+
+
+
+        <section class="formulario">
+            <form action="">          
+                   <div>
+                     <label for="name">Nombre y Apellido</label>
+                     <input class="form_input" type="text" id="name">
+                   </div>                           
+                   <div>
+                    <label for="email">Email</label>
+                    <input class="form_input" type="email" id="email"> 
+                   </div>         
+                <fieldset>
+                    <legend>Motivo de la consulta</legend>
+                     <div>
+                       <label for="implantes">Implantes</label>
+                       <input type="checkbox" id="implantes">
+                     </div>
+                     <div>                  
+                       <label for="ortodoncia">Ortodoncia</label>
+                       <input type="checkbox" id="ortodoncia">
+                     </div>
+                     <div>
+                       <label for="extraccion">Extraccion</label>
+                       <input type="checkbox" id="extraccion">
+                     </div>
+                     <div>                  
+                       <label for="urgencia">Urgencia</label>
+                       <input type="checkbox" id="urgencia"> 
+                     </div>
+                     <div>                  
+                       <label for="protesis">Protesis</label>
+                       <input type="checkbox" id="protesis">
+                     </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                      <legend>Primera vez que viene</legend>
+                        <label for="si">si</label>
+                        <input type="radio" id="si" name="Nuevo paciente">                  
+                        <label for="no">no</label>
+                        <input type="radio" id="no" name="Nuevo paciente">
+                    </div>                  
+                      <label for="presentacion">Como nos conocio</label>
+                        <select name="" id="" class="formulario_seleccion">
+                          <option value="Internet">Por Internet</option>
+                          <option value="Recomendacion">Me lo Recomendaron</option>
+                        </select>
+                </fieldset>
+                <div>
+                  <label for="comentario">Deje un comentario</label>   
+                    <div>       
+                          <textarea name="" id="" cols="30" rows="10"></textarea> 
+                    </div>                  
+                    <div>
+                          <input type="reset" value="Cancelar">
+                          <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+
+  /*CONOCENOS*/
+
+    /*frase presentacion*/
+        
+        .encabezado_caja-text{
+            background-color: black;
+            font-size: 1.5rem;
+        }
+
+           .encabezado_caja-text p{
+             color: #F5F2E7;
+             text-align: center;
+             padding: 5px;
+             font-weight: 500;
+           }
+
+        #nosotros{
+            font-family: 'Roboto', sans-serif;
+        }
+
+          #nosotros h2{
+            font-size: 2.7rem;
+            padding: 10px;
+            text-align: center;
+            color: #FFF9D7;
+            margin-top: 15px;
+            margin-bottom: 10px;
+          } 
+
+           .odontologos figure{
+            width: 40%;
+           }
+
+           .odontologos img{
+            width: 100%;
+           }
+
+           #nosotros .conocenos .odontologos{                   
+            display: flex;          
+            justify-content: space-evenly ;
+
+          }
+
+          #nosotros figcaption{
+            font-size: 1.5rem;
+            text-align: center;
+            color: #F5F2E7;
+          }
+
+          #nosotros .odontologos_texto{
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 5px;
+            margin-top: 35px;
+          }
+
+          #nosotros p{
+            font-size: 2rem;
+            padding: 10px;
+            color: #F5F2E7;
+            text-align: center;
+          }
+
+          #nosotros .odontologos img{
+            background-image:url(../IMAGENES/fondos/fondo-nosotros.png);
+            padding: 10px;
+          }
+
+          .texto_boostrap h4{
+            font-size:4rem ;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            color: #FFF9D7 ;
+          }
+
+          .texto_boostrap p{
+            font-size: 2.2rem;
+            text-align: center;
+            color: #F5F2E7;
+          }
+
+          .card a{
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white ;
+          }
+          .card-body p{
+            font-size: 1.5rem;
+            color: #F5F2E7;
+          }
+          .card-body h5{
+            color: #F5F2E7;
+          }
+          .boostrap_flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .card_fondo{
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+
+
+<main id="nosotros">
+      <section class="conocenos">
+      <h2>Conocenos</h2>
+
+         <article class="odontologos">
+                 <figure>
+                    <img src="../IMAGENES/odontologos/foto-mauro.jpg" alt="odontologo sonriendo"
+                    > 
+                    <figcaption>OD. Mauro Gonzales Trebotich</figcaption>  
+                </figure>
+                <figure>
+                    <img src="../IMAGENES/odontologos/foto-lola.jpg" alt="odontologa sonriendo">
+                    <figcaption>OD. Maria Dolores Bormida</figcaption>
+                </figure>
+        </article>
+        <article class="odontologos_texto">
+             <p>Somos odontólogos egresados en la U.N.L.P y fue allí donde terminando la carrera nos conocimos hace 10 años. Recorrimos un hermoso camino hasta llegar a lo que hoy es DENTIX, nuestra segunda casa.</p>
+             <p>Ambos coincidimos en que la atención al paciente debe ser cálida y cercana sin descuidar el foco en lo que nos apasiona, la salud bucal.</p>
+             <p>Sabemos que el paciente  en la mayoría de los casos cuando acude a la consulta presenta un problema a resolver cargado de experiencias previas que no siempre fueron gratas y que no se olvidan fácilmente. Es por eso que hacemos hincapié en la prevención y el aprendizaje de aquellas técnicas de higiene que evitan llevarnos a tratamientos  no deseados.</p>
+             <p>El dolor de muelas nos inhabilita a hacer lo que nos gusta, nuestras obligaciones diarias e incluso relacionarnos con las personas. Entendemos que la salud es prioridad secundado por la estética. La sonrisa es nuestra carta de presentación. Una hermosa sonrisa transmite seguridad, confianza, habla bien de nuestros hábitos. Por eso los invitamos a realizar todo aquello que sea necesario para lograrlo.</p>
+             <p>El paciente que concurre a Roots sabe que puede contar con nosotros y que la confianza es mutua. Ganamos muchos amigos haciendo lo que hacemos y eso nos dio el empuje de armar este proyecto. Es por eso que disfrutamos  llegar al consultorio, dedicarle todo nuestro tiempo y nos emociona recibir sus devoluciones.</p>
+      
+        </article>
+ </main>
+    <!-- Termina main -->
+        nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+        nav ul{      
+         justify-content: flex-start;
+        }
+       
+           nav ul li{
+              margin-right: 15px;
+
+           }
+              nav ul li a{
+                font-size: 2rem;
+            }
+
+
+
+ #agenda-ahora{
+        font-family: 'Roboto', sans-serif;
+        grid-area: main;
+
+     }
+
+       #agenda-ahora h2{
+        font-size: 2.7rem;
+        padding: 10px;
+        text-align: center;
+        color: #FFF9D7;
+        margin-top: 15px;
+        margin-bottom: 10px;
+       }
+
+       #agenda-ahora form{
+        width: 90%;
+        margin: 5px auto;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        color: #F5F2E7;
+        font-size: 1.5rem;
+        border-radius: 3px;
+       }
+
+       input, textarea{
+        outline: none;
+       }
+
+        fieldset{
+        margin-top: 3px;
+        margin-bottom: 3px;
+        border: none;
+       }
+
+        form div{
+         margin-top: 3px;
+          margin-bottom: 3px;
+       }
+
+    .video_estructura{
+        grid-area: video;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        margin: 8px;
+
+
+    }
+
+      .video_estructura h5{
+        font-size: 2.5rem;
+        color: #FFF9D7 ;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      .video_estructura p{
+        font-size: 1.8rem ;
+        text-align: center;
+        color: #F5F2E7;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .video_estructura iframe{
+        width: 80% ;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+      }
+
+    #aside{
+        grid-area: aside;
+    }
+    
+    aside h6{
+        font-size: 2.8rem;
+        color: #FFF9D7 ;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    
+    .aside_imagenes{
+        text-align: center;
+
+    }
+
+    .aside_imagenes img{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .grid_agenda-ahora{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "main"
+                             "video"
+                             "aside"
+
+    }
+
+
+   .grid_agenda-ahora{
+    grid-template-columns: 50% 10% 40%;
+    grid-template-areas: "main . video"                      
+                         "aside aside aside"
+
+    }
+
+    #agenda-ahora form{
+        width: 90%;;
+        font-size: 2rem;
+        border-radius: 3px;
+       }
+    .video_estructura{
+      width: 80%;
+      margin: 0 auto;
+      height: 90%;
+      margin-top: 35px;
+
+    }
+
+    .video_estructura h5{
+        font-size: 3.5rem;
+    }
+
+    .video_estructura p{
+        font-size: 2.7rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .video_estructura iframe{
+      height: 30% ;
+     }
+    
+    aside h6{
+        font-size: 4rem;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+   .aside_imagenes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+   } 
+
+
+   <!-- Empieza formulario -->
+          <form>
+            <div class="mb-3">
+               <label for="name" class="form-label">Nombre</label>
+               <input type="text" class="form-control" id="name" aria-describedby="emailHelp">                             
+            </div>
+            <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Email</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                             
+            </div>
+            <div>
+                <label for="comentario">Motivo de la consulta</label>   
+                 <div>       
+                    <textarea class="w-100" name="" id="" cols="30" rows="10"></textarea> 
+                </div>                  
+                    <div>
+                        <input type="reset" value="Cancelar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+
+
+        <!-- Termina formulario -->
+    </main>
+
+    <!-- Termina main -->
+    <!-- Empieza video -->
+    <div class="video_estructura">
+        <div>
+            <h5>¿Le das importancia al cepillado?</h5>
+            <p>Muchos de los problemas que llevan a acudir a un odontologo son consecuencias de un mal cepillado. Aca les dejamos un video explicando paso a paso como es un correcto cepillado</p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F20LjQqBtkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+    <aside id="aside">
+        <h6>Gracias por elegirnos</h6>
+        <div class="aside_imagenes">
+          <img src="../IMAGENES/seccion-conocenos/imagen-dos.jpeg" alt="">
+          <img src="../IMAGENES/seccion-conocenos/imagen-tres.jpeg" alt="">
+          <img src="../IMAGENES/seccion-conocenos/imagen-cuatro.jpeg" alt="">
+        </div>
+    </aside>
+    </div>
+    <!-- Termina main -->
