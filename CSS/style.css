@@ -1,0 +1,331 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap");
+html {
+  font-size: 62.5%; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #2C3333;
+  background-repeat: repeat;
+  background-attachment: fixeo;
+  background-size: cover; }
+
+.nav_diseño {
+  background-color: #2C3333; }
+
+.imagen_tamaño {
+  height: 50px; }
+
+#nav a {
+  color: #F5F2E7; }
+  #nav a:hover {
+    color: #8E806A;
+    font-weight: 800; }
+
+.logo_animation:hover {
+  transform: scale(1.4, 1.4);
+  transition: 2s;
+  cursor: pointer; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  animation-name: animateHeader;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+@keyframes animateHeader {
+  0% {
+    background-image: url(../IMAGENES/fondos/fondo-header.jpg);
+    background-position: center; }
+  50% {
+    background-image: url(../IMAGENES/fondos/fondo-header-two.jpg);
+    background-position: center; }
+  100% {
+    background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
+    background-position: center; } }
+
+footer {
+  background-image: url(../IMAGENES/fondos/fondo-odontologos.png);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7rem; }
+
+@media (min-width: 1200px) {
+  #nav a {
+    font-size: 2.5rem;
+    margin-right: 20px; } }
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px; }
+  .presentacion P {
+    font-size: 3rem;
+    text-align: center;
+    padding: 7px;
+    margin-top: 20;
+    margin-bottom: 15px;
+    color: #F5F2E7; }
+
+#tratamientos {
+  font-family: "Roboto", sans-serif; }
+  #tratamientos h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #DDDDDD;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  #tratamientos .tratamientos-especificos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    #tratamientos .tratamientos-especificos h2 {
+      font-size: 2rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #DDDDDD;
+      text-align: center; }
+    #tratamientos .tratamientos-especificos p {
+      font-size: 1.5rem;
+      padding: 5px;
+      margin: 5px;
+      text-align: center;
+      color: #F5F2E7; }
+
+.odontologia-general,
+.urgencias,
+.protesis,
+.ortodoncia-ortopedia,
+.implantes,
+.odontopediatria,
+.endodoncia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  margin-top: 10px; }
+
+.urgencias,
+.protesis,
+.odontopediatria,
+.ortodoncia-ortopedia {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.odontologia-general,
+.endodoncia,
+.implantes {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+@keyframes animateTratamientos {
+  from {
+    opacity: 0.3; }
+  to {
+    opacity: 1; } }
+
+.odontologia-general, .urgencias, .protesis, .ortodoncia-ortopedia, .implantes, .odontopediatria, .endodoncia {
+  animation-name: animateTratamientos;
+  animation-duration: 6s;
+  animation-timing-function: ease-in; }
+
+@media (min-width: 768px) {
+  .presentacion {
+    flex-direction: row-reverse;
+    padding: 15px;
+    margin: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .presentacion p {
+      font-size: 3.5rem;
+      padding: 10px;
+      margin-left: 5px; }
+  #tratamientos .tratamientos-especificos p {
+    font-size: 2rem;
+    padding: 10px; }
+  .odontologia-general,
+  .urgencias,
+  .protesis,
+  .ortodoncia-ortopedia,
+  .implantes,
+  .odontopediatria,
+  .endodoncia {
+    flex-direction: row;
+    margin: 20px;
+    border-bottom: solid 5px #F5F2E7; }
+  .odontologia-general,
+  .endodoncia,
+  .implantes {
+    flex-direction: row-reverse; } }
+
+@media (min-width: 1200px) {
+  .presentacion {
+    padding: 10px 20px;
+    margin: 35px 20px; }
+    .presentacion p {
+      font-size: 4rem; }
+  .odontologia-general {
+    grid-area: tratamiento2; }
+  .endodoncia {
+    grid-area: tratamiento4; }
+  .implantes {
+    grid-area: tratamiento6; }
+  .urgencias {
+    grid-area: tratamiento1; }
+  .protesis {
+    grid-area: tratamiento3; }
+  .odontopediatria {
+    grid-area: tratamiento5; }
+  .ortodoncia-ortopedia {
+    grid-area: tratamiento7; }
+  #tratamientos .tratamientos-especificos {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: auto;
+    grid-template-areas: "tratamiento1 tratamiento1 ."   ". tratamiento2 tratamiento2" "tratamiento3 tratamiento3 ." ". tratamiento4 tratamiento4" "tratamiento5 tratamiento5 ." ". tratamiento6 tratamiento6" "tratamiento7 tratamiento7 ."; }
+    #tratamientos .tratamientos-especificos p {
+      font-size: 2.3rem;
+      padding: 15px;
+      margin: 10px; } }
+
+#nosotros {
+  font-family: "Poppins", sans-serif; }
+  #nosotros h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #F5F2E7; }
+  #nosotros .main_article--odontologos {
+    width: 85%;
+    margin: 0 auto; }
+    #nosotros .main_article--odontologos img {
+      width: 100%; }
+    #nosotros .main_article--odontologos h3 {
+      font-size: 1.8rem;
+      text-align: center;
+      color: white;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    #nosotros .main_article--odontologos p {
+      font-size: 2rem;
+      color: #F5F2E7;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 20px; }
+  #nosotros .main_separador--conocenos {
+    width: 65%;
+    border-bottom: solid 5px white;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+
+@media (min-width: 768px) {
+  #nosotros .main_article--odontologos {
+    width: 90%;
+    display: flex;
+    margin-bottom: 25px;
+    padding: 15px; } }
+
+@media (min-width: 1200px) {
+  #nosotros .main_article--odontologos {
+    margin-top: 35px;
+    margin-bottom: 35px; }
+    #nosotros .main_article--odontologos p {
+      font-size: 2.7rem;
+      padding: 20px;
+      margin: 10px 25px; } }
+
+#consultorio {
+  font-family: "Poppins", sans-serif; }
+  #consultorio h2 {
+    font-size: 4rem;
+    padding: 10px;
+    text-align: center;
+    color: #DDDDDD;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  #consultorio .main_carousel {
+    background-color: rgba(0, 0, 0, 0.5); }
+  #consultorio p {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #F5F2E7;
+    text-align: center; }
+  #consultorio iframe {
+    width: 100%; }
+
+#preguntas-frecuentes {
+  font-family: "Poppins", sans-serif; }
+  #preguntas-frecuentes h2 {
+    font-size: 4rem;
+    padding: 10px;
+    text-align: center;
+    color: #DDDDDD;
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  #preguntas-frecuentes h3 {
+    font-size: 3.5rem;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #395B64;
+    padding: 20px; }
+  #preguntas-frecuentes p {
+    font-size: 2.3rem;
+    color: #F5F2E7;
+    padding: 15px; }
+  #preguntas-frecuentes .borde_separador {
+    width: 60%;
+    border-bottom: solid 5px white;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px; }
+
+#agenda-ahora {
+  font-family: "Poppins", sans-serif; }
+  #agenda-ahora .main_article--form {
+    background-color: rgba(0, 0, 0, 0.6); }
+  #agenda-ahora h2 {
+    font-size: 4rem;
+    padding: 10px;
+    text-align: center;
+    color: #DDDDDD;
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  #agenda-ahora form label {
+    font-size: 2.3em;
+    color: #395B64; }
+  #agenda-ahora form input {
+    font-size: 1.5em; }
+  #agenda-ahora form textarea {
+    font-size: 1.5em; }
+  #agenda-ahora h4 {
+    font-size: 4rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #395B64; }
+  #agenda-ahora h5 {
+    font-size: 2.5em;
+    color: #2666CF; }
+  #agenda-ahora .card p {
+    font-size: 2em;
+    color: #F5F2E7; }
+  #agenda-ahora .fondo_cards {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.imagen_form {
+  height: 100%;
+  display: flex; }

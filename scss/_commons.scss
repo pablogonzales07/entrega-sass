@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap');
+
+html{
+	font-size: 62.5%;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+
+  background-color: $mainColor;
+  background-repeat: repeat;
+  background-attachment: fixeo;
+  background-size: cover;
+  
+}
+
+//DISEÑO DE LA NAV
+
+.nav_diseño{
+    background-color: #2C3333;
+ }
+
+.imagen_tamaño{
+    height:50px;
+ }
+
+#nav{
+    a{
+        color: $colorTextos;
+        &:hover{
+            color: #8E806A;
+            font-weight: 800; 
+        }        
+    }
+}
+
+.logo_animation {
+    &:hover {
+        transform: scale(1.4, 1.4);
+        transition: 2s;
+        cursor: pointer;
+    }
+}
+
+
+
+//DISEÑO HEADER
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    animation-name: animateHeader;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+ }
+
+  @keyframes animateHeader{
+     0%{background-image: url(../IMAGENES/fondos/fondo-header.jpg);
+         background-position: center;}
+     50%{background-image: url(../IMAGENES/fondos/fondo-header-two.jpg);
+         background-position: center;}
+     100%{background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
+         background-position: center;}
+ }
+
+ //FOOTER:
+
+ footer {
+     background-image: url(../IMAGENES/fondos/fondo-odontologos.png);
+     background-size: cover;
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 7rem;
+ }
+
+
+ @media (min-width:1200px){
+    #nav{
+        a{
+            font-size: 2.5rem;
+            margin-right: 20px;
+        }
+    }
+ }
