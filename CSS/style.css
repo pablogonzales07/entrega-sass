@@ -22,10 +22,19 @@ body {
   height: 50px; }
 
 #nav a {
-  color: #F5F2E7; }
+  color: #F5F2E7;
+  font-size: 2rem; }
   #nav a:hover {
-    color: #8E806A;
+    color: #395B64;
     font-weight: 800; }
+
+#nav svg {
+  width: 40px;
+  height: 40px;
+  fill: #F5F2E7; }
+  #nav svg rect {
+    width: 100%;
+    height: 10px; }
 
 .logo_animation:hover {
   transform: scale(1.4, 1.4);
@@ -261,7 +270,8 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px; }
   #consultorio .main_carousel {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%; }
   #consultorio p {
     font-size: 3rem;
     margin-top: 20px;
@@ -271,6 +281,14 @@ footer {
     text-align: center; }
   #consultorio iframe {
     width: 100%; }
+
+@media (min-width: 768px) {
+  #consultorio .main_carousel {
+    width: 70%; } }
+
+@media (min-width: 1200px) {
+  #consultorio .main_carousel {
+    width: 50%; } }
 
 #preguntas-frecuentes {
   font-family: "Poppins", sans-serif; }
