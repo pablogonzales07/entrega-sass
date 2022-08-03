@@ -3,6 +3,7 @@ $mainColor: #2C3333;
 $secondaryColor: #395B64;
 $colorTextos: #F5F2E7;
 $colorTitulos:#DDDDDD;
+$titulosSecundarios:#2666CF;
 
 //variables de tamaños:
 $tamañoTitulos: 4rem;
@@ -10,3 +11,20 @@ $tamañoTitulos: 4rem;
 //variables de fonts:
 $fontMain: 'Poppins', sans-serif;
 $fontSecond: 'Roboto', sans-serif;
+
+
+//maps
+
+$blacks: (
+    "uno" : rgba(0, 0, 0, 1),
+    "dos" : rgba(0, 0, 0, 0.9),
+    "tres" : rgba(0, 0, 0, 0.8),
+    "cuatro" : rgba(0, 0, 0, 0.7),
+    "cinco" : rgba(0, 0, 0, 0.6),
+    "seis" : rgba(0, 0, 0, 0.5),
+    "siete" : rgba(0, 0, 0, 0.4),
+    "ocho" : rgba(0, 0, 0, 0.3),
+    "nueve" : rgba(0, 0, 0, 0.2),
+    "diez" : rgba(0, 0, 0, 0.1),
+    );
+

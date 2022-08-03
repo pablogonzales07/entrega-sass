@@ -1,0 +1,7 @@
+DOCUMENTO EXPLICATIVO DE SEO:
+
+*Aplico TITTLE en cada archivo HTML
+*Aplico META NAME DESCRIPTION a cada archivo HTML
+*Mejoro la semantica de cada arhivo HTML
+*Aplico ALT a cada imagen HTML
+*Aplico META NAME KEYWORDS a cada archivo HTML

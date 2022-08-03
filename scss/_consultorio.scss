@@ -1,18 +1,18 @@
-#consultorio{
+#consultorio {
     font-family: $fontMain;
-    h2{
-        font-size: $tamañoTitulos;
-        padding: 10px;
-        text-align: center;
-        color: $colorTitulos;
+
+    h2 {
+        @extend .diseño_title--h2;
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .main_carousel{
-        background-color: rgba(0, 0, 0, 0.5);
+
+    .main_carousel {
+        background-color: map-get($blacks, $key: "seis");
         width: 90%;
     }
-    p{
+
+    p {
         font-size: 3rem;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -20,23 +20,25 @@
         color: $colorTextos;
         text-align: center;
     }
-    iframe{
+
+    iframe {
         width: 100%;
     }
 
 }
-@media (min-width: 768px){
-    #consultorio{
-        .main_carousel{
+
+@media (min-width: 768px) {
+    #consultorio {
+        .main_carousel {
             width: 70%;
         }
     }
 
 }
 
-@media (min-width: 1200px){
-    #consultorio{
-        .main_carousel{
+@media (min-width: 1200px) {
+    #consultorio {
+        .main_carousel {
             width: 50%;
         }
     }

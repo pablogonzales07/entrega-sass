@@ -1,9 +1,7 @@
 //CAJA DE PRESENTACION:
 
 .presentacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, flex-start, center);
     padding: 5px;
 
     P {
@@ -30,10 +28,7 @@
     }
 
     .tratamientos-especificos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        @include flex(column, space-evenly, center);
 
         h2 {
             font-size: 2rem;
@@ -51,10 +46,7 @@
             color: #F5F2E7;
         }
 
-
     }
-
-
 }
 
 .odontologia-general,
@@ -64,10 +56,7 @@
 .implantes,
 .odontopediatria,
 .endodoncia {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, flex-start, center);
     padding: 10px;
     width: 90%;
     margin-top: 10px;
@@ -77,7 +66,7 @@
 .protesis,
 .odontopediatria,
 .ortodoncia-ortopedia {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: map-get($blacks, $key: "siete");
 
 
 }
@@ -85,16 +74,27 @@
 .odontologia-general,
 .endodoncia,
 .implantes {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: map-get($blacks, $key: "cuatro");
 }
 
 //ANIMACIONES DE TRATAMIENTOS:
-@keyframes animateTratamientos{
-    from{opacity: 0.3}
-    to{opacity: 1}
+@keyframes animateTratamientos {
+    from {
+        opacity: 0.3
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-.odontologia-general, .urgencias, .protesis, .ortodoncia-ortopedia, .implantes, .odontopediatria, .endodoncia {
+.odontologia-general,
+.urgencias,
+.protesis,
+.ortodoncia-ortopedia,
+.implantes,
+.odontopediatria,
+.endodoncia {
     animation-name: animateTratamientos;
     animation-duration: 6s;
     animation-timing-function: ease-in;
@@ -102,101 +102,106 @@
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .presentacion {
-            flex-direction: row-reverse;
-            padding: 15px;
-            margin: 15px 10px;
-            background-color: rgba(0, 0, 0, 0.4);
-    
+        flex-direction: row-reverse;
+        padding: 15px;
+        margin: 15px 10px;
+        background-color: map-get($blacks, $key: "siete");
+
+        p {
+            font-size: 3.5rem;
+            padding: 10px;
+            margin-left: 5px;
+        }
+    }
+
+    #tratamientos {
+        .tratamientos-especificos {
             p {
-                font-size: 3.5rem;
+                font-size: 2rem;
                 padding: 10px;
-                margin-left: 5px;
             }
-        }
-    
-        #tratamientos {
-            .tratamientos-especificos {
-                p {
-                    font-size: 2rem;
-                    padding: 10px;
-                }
-            }
-        }
-    
-        .odontologia-general,
-        .urgencias,
-        .protesis,
-        .ortodoncia-ortopedia,
-        .implantes,
-        .odontopediatria,
-        .endodoncia {
-            flex-direction: row;
-            margin: 20px;
-            border-bottom: solid 5px $colorTextos;
-    
-        }
-    
-        .odontologia-general,
-        .endodoncia,
-        .implantes {
-            flex-direction: row-reverse;
         }
     }
 
-    @media (min-width: 1200px){
-        .presentacion{
-            padding: 10px 20px;
-            margin: 35px 20px;
-            p{
-                font-size: 4rem;
-            }
-        }
-
-        .odontologia-general{
-            grid-area: tratamiento2;
-           }
-          .endodoncia{
-            grid-area: tratamiento4;
-           }
-          .implantes{
-            grid-area: tratamiento6;
-          }
-         .urgencias{
-            grid-area: tratamiento1;
-         }
-         .protesis{
-            grid-area: tratamiento3;
-         }
-         .odontopediatria{
-            grid-area: tratamiento5;
-         }
-         .ortodoncia-ortopedia{
-            grid-area: tratamiento7;
-         }
-
-         #tratamientos{
-            .tratamientos-especificos{
-                margin-top: 35px;
-                display: grid;
-                grid-template-columns: 33vw 33vw 33vw;
-                grid-template-rows: auto;
-                grid-template-areas:"tratamiento1 tratamiento1 ."  
-                                    ". tratamiento2 tratamiento2"
-                                    "tratamiento3 tratamiento3 ."
-                                    ". tratamiento4 tratamiento4"
-                                    "tratamiento5 tratamiento5 ."
-                                    ". tratamiento6 tratamiento6"
-                                    "tratamiento7 tratamiento7 ." ;
-                p{
-                    font-size: 2.3rem;
-                    padding: 15px;
-                    margin: 10px;
-                }
-            }
-         }
-      
-
+    .odontologia-general,
+    .urgencias,
+    .protesis,
+    .ortodoncia-ortopedia,
+    .implantes,
+    .odontopediatria,
+    .endodoncia {
+        flex-direction: row;
+        margin: 20px;
+        border-bottom: solid 5px $colorTextos;
 
     }
+
+    .odontologia-general,
+    .endodoncia,
+    .implantes {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 1200px) {
+    .presentacion {
+        padding: 10px 20px;
+        margin: 35px 20px;
+
+        p {
+            font-size: 4rem;
+        }
+    }
+
+    .odontologia-general {
+        grid-area: tratamiento2;
+    }
+
+    .endodoncia {
+        grid-area: tratamiento4;
+    }
+
+    .implantes {
+        grid-area: tratamiento6;
+    }
+
+    .urgencias {
+        grid-area: tratamiento1;
+    }
+
+    .protesis {
+        grid-area: tratamiento3;
+    }
+
+    .odontopediatria {
+        grid-area: tratamiento5;
+    }
+
+    .ortodoncia-ortopedia {
+        grid-area: tratamiento7;
+    }
+
+    #tratamientos {
+        .tratamientos-especificos {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: 33vw 33vw 33vw;
+            grid-template-rows: auto;
+            grid-template-areas: "tratamiento1 tratamiento1 ."
+                ". tratamiento2 tratamiento2"
+                "tratamiento3 tratamiento3 ."
+                ". tratamiento4 tratamiento4"
+                "tratamiento5 tratamiento5 ."
+                ". tratamiento6 tratamiento6"
+                "tratamiento7 tratamiento7 .";
+
+            p {
+                font-size: 2.3rem;
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    }
+}

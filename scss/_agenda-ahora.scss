@@ -1,52 +1,58 @@
-#agenda-ahora{
+#agenda-ahora {
     font-family: $fontMain;
-    .main_article--form{
-        background-color: rgba(0, 0, 0, 0.6);
+
+    .main_article--form {
+        background-color: map-get($blacks, $key: "cinco");
     }
-    h2{
-        font-size: $tamañoTitulos;
-        padding: 10px;
-        text-align: center;
-        color: $colorTitulos;
+
+    h2 {
+        @extend .diseño_title--h2;
         margin-top: 15px;
         margin-bottom: 10px;
     }
-    form{
-        label{
+
+    form {
+        label {
             font-size: 2.3em;
             color: $secondaryColor;
         }
-        input{
+
+        input {
             font-size: 1.5em;
         }
-        textarea{
+
+        textarea {
             font-size: 1.5em;
         }
     }
-    h4{
+
+    h4 {
         font-size: $tamañoTitulos;
         margin-top: 40px;
         margin-bottom: 40px;
         text-align: center;
         color: $secondaryColor;
     }
-    h5{
+
+    h5 {
         font-size: 2.5em;
-        color: #2666CF;
+        color: $titulosSecundarios;
     }
-    .card{
-        p{
+
+    .card {
+        p {
             font-size: 2em;
             color: $colorTextos;
         }
     }
-    .fondo_cards{
-        background-color: rgba(0, 0, 0, 0.5);
+
+    .fondo_cards {
+        background-color: map-get($blacks, $key: "seis");
     }
 }
 
-.imagen_form{
+.imagen_form {
     height: 100%;
     display: flex;
 
-}  
+}
