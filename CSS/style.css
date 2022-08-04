@@ -55,10 +55,10 @@ header {
     background-image: url(../IMAGENES/fondos/fondo-header.jpg);
     background-position: center; }
   50% {
-    background-image: url(../IMAGENES/fondos/fondo-header-two.jpg);
+    background-image: url(../IMAGENES/fondos/fondo-header-two-mobile.jpg);
     background-position: center; }
   100% {
-    background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
+    background-image: url(../IMAGENES/fondos/fondo-header-three-mobile.jpg);
     background-position: center; } }
 
 footer {
@@ -67,6 +67,18 @@ footer {
   display: flex;
   justify-content: flex-end;
   margin-top: 7rem; }
+
+@media (min-width: 780px) {
+  @keyframes animateHeader {
+    0% {
+      background-image: url(../IMAGENES/fondos/fondo-header.jpg);
+      background-position: center; }
+    50% {
+      background-image: url(../IMAGENES/fondos/fondo-header-two.jpg);
+      background-position: center; }
+    100% {
+      background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
+      background-position: center; } } }
 
 @media (min-width: 992px) {
   #nav a {
@@ -82,7 +94,9 @@ footer {
   font-size: 4rem;
   padding: 10px;
   text-align: center;
-  color: #DDDDDD; }
+  color: #DDDDDD;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .presentacion {
   display: flex;
@@ -228,9 +242,6 @@ footer {
 
 #nosotros {
   font-family: "Poppins", sans-serif; }
-  #nosotros h2 {
-    margin-top: 20px;
-    margin-bottom: 25px; }
   #nosotros .main_article--odontologos {
     width: 85%;
     margin: 0 auto; }
@@ -273,9 +284,6 @@ footer {
 
 #consultorio {
   font-family: "Poppins", sans-serif; }
-  #consultorio h2 {
-    margin-top: 30px;
-    margin-bottom: 30px; }
   #consultorio .main_carousel {
     background-color: rgba(0, 0, 0, 0.5);
     width: 90%; }
@@ -299,9 +307,6 @@ footer {
 
 #preguntas-frecuentes {
   font-family: "Poppins", sans-serif; }
-  #preguntas-frecuentes h2 {
-    margin-top: 15px;
-    margin-bottom: 10px; }
   #preguntas-frecuentes h3 {
     font-size: 3.5rem;
     margin-top: 35px;
@@ -323,9 +328,6 @@ footer {
   font-family: "Poppins", sans-serif; }
   #agenda-ahora .main_article--form {
     background-color: rgba(0, 0, 0, 0.6); }
-  #agenda-ahora h2 {
-    margin-top: 15px;
-    margin-bottom: 10px; }
   #agenda-ahora form label {
     font-size: 2.3em;
     color: #395B64; }

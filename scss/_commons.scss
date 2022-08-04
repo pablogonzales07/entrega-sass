@@ -82,12 +82,12 @@ header {
     }
 
     50% {
-        background-image: url(../IMAGENES/fondos/fondo-header-two.jpg);
+        background-image: url(../IMAGENES/fondos/fondo-header-two-mobile.jpg);
         background-position: center;
     }
 
     100% {
-        background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
+        background-image: url(../IMAGENES/fondos/fondo-header-three-mobile.jpg);
         background-position: center;
     }
 }
@@ -102,6 +102,24 @@ footer {
     margin-top: 7rem;
 }
 
+@media (min-width:780px){
+    @keyframes animateHeader {
+        0% {
+            background-image: url(../IMAGENES/fondos/fondo-header.jpg);
+            background-position: center;
+        }
+    
+        50% {
+            background-image: url(../IMAGENES/fondos/fondo-header-two.jpg);
+            background-position: center;
+        }
+    
+        100% {
+            background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
+            background-position: center;
+        }
+    }
+}
 
 @media (min-width:992px) {
     #nav {
@@ -119,6 +137,8 @@ footer {
             margin-right: 20px;
         }
     }
+
+
 }
 
 //clases base:
@@ -128,4 +148,6 @@ footer {
     padding: 10px;
     text-align: center;
     color: $colorTitulos;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
