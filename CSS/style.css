@@ -62,7 +62,7 @@ header {
     background-position: center; } }
 
 footer {
-  background-image: url(../IMAGENES/fondos/fondo-odontologos.png);
+  background-image: url(../IMAGENES/fondos/fondo-header.jpg);
   background-size: cover;
   display: flex;
   justify-content: flex-end;
