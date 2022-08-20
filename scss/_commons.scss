@@ -26,10 +26,6 @@ body {
     background-color: #2C3333;
 }
 
-.imagen_tamaño {
-    height: 50px;
-}
-
 #nav {
     a {
         color: $colorTextos;
@@ -40,18 +36,18 @@ body {
             font-weight: 800;
         }
     }
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: $colorTextos;
 
-    svg {
-        width: 40px;
-        height: 40px;
-        fill: $colorTextos;
-
-        rect {
-            width: 100%;
-            height: 10px;
+            rect {
+                width: 100%;
+                height: 10px;
+            }
         }
     }
-}
+
 
 .logo_animation {
     &:hover {
@@ -61,19 +57,43 @@ body {
     }
 }
 
+.logo_tamaño{
+    height: 50px;
+}
+
 
 
 //DISEÑO HEADER
 
 header {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    animation-name: animateHeader;
-    animation-duration: 4s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        animation-name: animateHeader;
+        -webkit-animation-name: animateHeader;
+        -moz-animation-name: animateHeader;
+        -o-animation-name: animateHeader;
+        animation-duration: 4s;
+        -webkit-animation-duration: 4s;
+        -moz-animation-duration: 4s;
+        -o-animation-duration: 4s;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        -moz-animation-timing-function: ease;
+        -o-animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
 }
+
 
 @keyframes animateHeader {
     0% {
@@ -100,9 +120,10 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin-top: 7rem;
+    padding: 5px;
 }
 
-@media (min-width:780px){
+@media (min-width:768px){
     @keyframes animateHeader {
         0% {
             background-image: url(../IMAGENES/fondos/fondo-header.jpg);
@@ -119,6 +140,17 @@ footer {
             background-position: center;
         }
     }
+
+    .logo_tamaño{
+        height: 65px;
+    }
+
+    .logo_animation{
+        &:hover{
+            transform: scale(1.2,1.2)
+        }
+    }
+
 }
 
 @media (min-width:992px) {

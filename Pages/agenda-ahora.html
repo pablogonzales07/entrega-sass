@@ -9,7 +9,7 @@
   <title>DENTIX-Consultorio Odontologico-CABA-Contactanos y comentanos tus problemas</title>
   <meta name="description"
     content="Nuestro principal objetivo es que en todo momento cuentes con nuestra atencion, en este sitio vas a tener la facilidad para comunicarte con nosotros en todo momento">
-  <meta name="keywords" content="agenda ahora, neceisto un odontologo en caba">
+  <meta name="keywords" content="agenda ahora, neceisto un odontologo en caba, comentarios sobre odontologos">
   <link rel="shortcut icon" href="../IMAGENES/icono-logo/icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg navbar-light nav_diseño p-2" id="nav">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">
-        <img class="imagen_tamaño logo_animation" src="../IMAGENES/icono-logo/logo.png" alt="">
+        <img class="logo_tamaño logo_animation" src="../IMAGENES/icono-logo/logo.svg" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,28 +69,29 @@
   <main id="agenda-ahora">
     <h2>Agenda ahora</h2>
     <div class="container-fluid">
-      <div class="row main_article--form p-4 m-4">
+      <section class="row main_article--form p-4 m-4">
         <!-- Empieza formulario -->
         <article class="col-sm-12 col-md-6 col-xl-6">
           <form>
             <div class="mb-3">
               <label for="name" class="form-label">Nombre y Apellido</label>
               <input type="email" class="form-control" id="name" aria-describedby="emailHelp"
-                placeholder="Leandro Atilio Romagnoli">
+                placeholder="Ingrese su nombre y apellido">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                placeholder="leandro_10@gmail.com">
+                placeholder="Ingrese su email">
             </div>
             <div>
               <label for="comentario">Motivo de consulta</label>
               <div>
-                <textarea class="w-100" name="" id="" cols="30" rows="10" placeholder="Ingrese texto"></textarea>
+                <textarea class="w-100" name="" id="" cols="30" rows="10"
+                  placeholder="Detalle el motivo por el cual nos contacta"></textarea>
               </div>
-              <div>
-                <input type="reset" value="Cancelar">
-                <input type="submit" value="Enviar">
+              <div class="botons_form">
+                <input type="reset" value="Cancelar" class="boton_cancelar">
+                <input type="submit" value="Enviar" class="boton_enviar">
               </div>
             </div>
           </form>
@@ -102,116 +103,73 @@
           </div>
         </article>
         <!-- Termina formulario -->
-      </div>
+      </section>
       <h4>Comentarios de nuestros pacientes</h4>
-      <div class="row">
+      <section class="row">
+        <article class="caja_comentarios--pacientes p-3">
+          <p>Podemos practicar porque nuestros pacientes eligen confiar en nosotros. Esto, en realidad, es un gran honor
+            y es nuestro deber poner a los pacientes en primer lugar en todo lo que hacemos.</p>
+        </article>
+      </section>
+      <section class="row">
         <!-- Empiezan cards -->
         <article class="col-sm-12 col-md-6 col-xl-4 my-2">
           <div class="card fondo_cards">
             <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Ezequiel Cerutti</h5>
+              <p class="card-text"> Maxima calidad de atencion, siempre atentos a mis problemas muy recomendables</p>
             </div>
         </article>
         <article class="col-sm-12 col-md-6 col-xl-4 my-2">
           <div class="card fondo_cards">
             <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Sebastian Torrico</h5>
+              <p class="card-text">Excelentes profesionales y sobre todo excelentes personas, super recomendables</p>
             </div>
         </article>
         <article class="col-sm-12 col-md-6 col-xl-4 my-2">
           <div class="card fondo_cards">
             <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Adam Bareiro</h5>
+              <p class="card-text">Precios super accesibles, desde que entre hasta que sali me senti como en mi casa</p>
             </div>
         </article>
         <article class="col-sm-12 col-md-6 col-xl-4 my-2">
           <div class="card fondo_cards">
             <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Nahuel Barrios</h5>
+              <p class="card-text">Desde el momemnto en que me contacte, siempre estubieron a mi disposicion, un 10</p>
             </div>
         </article>
         <article class="col-sm-12 col-md-6 col-xl-4 my-2">
           <div class="card fondo_cards">
             <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Federico Gattoni</h5>
+              <p class="card-text">Lleve a mi hijo de 5 años y lo atendieron super bien, jamas sintio miedo y ningun
+                tipo de dolor</p>
             </div>
         </article>
         <article class="col-sm-12 col-md-6 col-xl-4 my-2">
           <div class="card fondo_cards">
             <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Duvan Zapata</h5>
+              <p class="card-text">Jamas me habia pasado de salir de un consultorio odontologico y sentirme tan
+                relajado, un 10</p>
             </div>
         </article>
-        <article class="col-sm-12 col-md-6 col-xl-4 my-2">
-          <div class="card fondo_cards">
-            <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4 my-2">
-          <div class="card fondo_cards">
-            <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4 my-2">
-          <div class="card fondo_cards">
-            <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4 my-2">
-          <div class="card fondo_cards">
-            <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4 my-2">
-          <div class="card fondo_cards">
-            <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-        </article>
-        <article class="col-sm-12 col-md-6 col-xl-4 my-2">
-          <div class="card fondo_cards">
-            <div class="card-body">
-              <h5 class="card-title">Nombre paciente</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-        </article>
-
         <!-- Terminan cards -->
+      </section>
+      <div class="mx-auto caja_tamaño--pacientes">
+        <a href="error404.html" class="boton_comentarios my-4">
+          <span id="span1"></span>
+          <span id="span2"></span>
+          <span id="span3"></span>
+          <span id="span4"></span>
+          Lee todos los comentarios
+        </a>
       </div>
-    </div>
-
-
   </main>
-
   <!-- Termina main -->
-
 
   <!-- Empieza footer -->
   <footer>

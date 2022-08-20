@@ -37,6 +37,14 @@
         color: $titulosSecundarios;
     }
 
+    .caja_comentarios--pacientes {
+        p {
+            text-align: center;
+            color: $colorTextos;
+            font-size: 2.5em;
+        }
+    }
+
     .card {
         p {
             font-size: 2em;
@@ -47,10 +55,103 @@
     .fondo_cards {
         background-color: map-get($blacks, $key: "seis");
     }
+
+    .caja_tamaño--pacientes {
+        width: 50%;
+    }
+
+    .boton_comentarios {
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        color: $colorTextos;
+        letter-spacing: 2px;
+        font-size: 24px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+        text-align: center;
+        width: 100%;
+
+        &:hover {
+            background-color: $secondaryColor;
+            box-shadow: 0 0 10px $secondaryColor, 0 0 40px $secondaryColor, 0 0 80px $secondaryColor;
+            transition-delay: 1s;
+
+            #span1 {
+                left: 100%;
+                transition: 1s;
+            }
+
+            #span3 {
+                right: 100%;
+                transition: 1s;
+                transition-delay: 0.5s;
+            }
+
+            #span2 {
+                top: 100%;
+                transition: 1s;
+                transition-delay: 0.25s;
+            }
+
+            #span4 {
+                bottom: 100%;
+                transition: 1seg;
+                transition-delay: 0.75s;
+            }
+        }
+
+        span {
+            position: absolute;
+            display: block;
+        }
+
+        #span1 {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, $secondaryColor);
+        }
+
+        #span3 {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, $secondaryColor);
+        }
+
+        #span2 {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, $secondaryColor);
+
+        }
+
+        #span4 {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, $secondaryColor);
+        }
+
+
+
+    }
+
+
+}
+
+.botons_form {
+    margin: 5px;
 }
 
 .imagen_form {
     height: 100%;
     display: flex;
-
 }

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lato");
 html {
   font-size: 62.5%; }
 
@@ -17,9 +18,6 @@ body {
 
 .nav_diseño {
   background-color: #2C3333; }
-
-.imagen_tamaño {
-  height: 50px; }
 
 #nav a {
   color: #F5F2E7;
@@ -41,14 +39,35 @@ body {
   transition: 2s;
   cursor: pointer; }
 
+.logo_tamaño {
+  height: 50px; }
+
 header {
   height: 100vh;
   width: 100%;
   background-size: cover;
   animation-name: animateHeader;
+  -webkit-animation-name: animateHeader;
+  -moz-animation-name: animateHeader;
+  -o-animation-name: animateHeader;
   animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
   animation-timing-function: ease;
-  animation-fill-mode: forwards; }
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; }
 
 @keyframes animateHeader {
   0% {
@@ -66,9 +85,10 @@ footer {
   background-size: cover;
   display: flex;
   justify-content: flex-end;
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  padding: 5px; }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   @keyframes animateHeader {
     0% {
       background-image: url(../IMAGENES/fondos/fondo-header.jpg);
@@ -78,7 +98,11 @@ footer {
       background-position: center; }
     100% {
       background-image: url(../IMAGENES/fondos/fondo-header-three.jpg);
-      background-position: center; } } }
+      background-position: center; } }
+  .logo_tamaño {
+    height: 65px; }
+  .logo_animation:hover {
+    transform: scale(1.2, 1.2); } }
 
 @media (min-width: 992px) {
   #nav a {
@@ -97,6 +121,175 @@ footer {
   color: #DDDDDD;
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.body_error {
+  background: #D3DEEA; }
+
+.top {
+  margin-top: 30px; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: -40px; }
+
+.ghost {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: #EDEDED;
+  border: 1px solid #BFC0C0;
+  border-bottom: none;
+  animation: float 2s ease-out infinite; }
+
+.ghost-copy {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: #EDEDED;
+  border: 1px solid #BFC0C0;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+  z-index: 0; }
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%; }
+
+.eye, .eye-right {
+  position: absolute;
+  background: #585959;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%; }
+
+.eye {
+  left: 25%; }
+
+.eye-right {
+  right: 25%; }
+
+.mouth {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: transparent #585959 #585959 transparent;
+  transform: rotate(45deg); }
+
+.one, .two, .three, .four {
+  position: absolute;
+  background: #EDEDED;
+  top: 85%;
+  width: 25%;
+  height: 23%;
+  border: 1px solid #BFC0C0;
+  z-index: 0; }
+
+.one {
+  border-radius: 0 0 100% 30%;
+  left: -1px; }
+
+.two {
+  left: 23%;
+  border-radius: 0 0 50% 50%; }
+
+.three {
+  left: 50%;
+  border-radius: 0 0 50% 50%; }
+
+.four {
+  left: 74.5%;
+  border-radius: 0 0 30% 100%; }
+
+.shadow {
+  position: absolute;
+  width: 30%;
+  height: 7%;
+  background: #BFC0C0;
+  left: 35%;
+  top: 80%;
+  border-radius: 50%;
+  animation: scale 2s infinite; }
+
+@keyframes scale {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes float {
+  50% {
+    transform: translateY(15px); } }
+
+.bottom {
+  margin-top: 10px; }
+
+/*text styling*/
+.titulo_error {
+  font-family: "Abril Fatface", serif;
+  color: #EDEDED;
+  text-align: center;
+  font-size: 9em;
+  margin: 0;
+  text-shadow: -1px 0 #BFC0C0, 0 1px #BFC0C0, 1px 0 #BFC0C0, 0 -1px #BFC0C0; }
+
+.titulo_secundario--error {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #BFC0C0;
+  margin-top: -20px;
+  font-weight: 900; }
+
+.texto_error {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #585959;
+  font-size: 2em;
+  margin-top: -20px;
+  text-transform: uppercase; }
+
+.search {
+  text-align: center; }
+
+.buttons_error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; }
+
+.btn_error {
+  background: #EDEDED;
+  padding: 15px 20px;
+  margin: 5px;
+  color: #585959;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 1px;
+  border: 0;
+  text-decoration: none; }
+  .btn_error:hover {
+    background: #BFC0C0;
+    transition: all .4s ease-out; }
 
 .presentacion {
   display: flex;
@@ -132,7 +325,7 @@ footer {
       color: #DDDDDD;
       text-align: center; }
     #tratamientos .tratamientos-especificos p {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       padding: 5px;
       margin: 5px;
       text-align: center;
@@ -185,10 +378,10 @@ footer {
   .presentacion {
     flex-direction: row-reverse;
     padding: 15px;
-    margin: 15px 10px;
+    margin: 15px 20px;
     background-color: rgba(0, 0, 0, 0.4); }
     .presentacion p {
-      font-size: 3.5rem;
+      font-size: 3rem;
       padding: 10px;
       margin-left: 5px; }
   #tratamientos .tratamientos-especificos p {
@@ -250,7 +443,7 @@ footer {
     #nosotros .main_article--odontologos h3 {
       font-size: 1.8rem;
       text-align: center;
-      color: white;
+      color: #DDDDDD;
       margin-top: 5px;
       margin-bottom: 5px; }
     #nosotros .main_article--odontologos p {
@@ -261,26 +454,28 @@ footer {
       margin-bottom: 20px; }
   #nosotros .main_separador--conocenos {
     width: 65%;
-    border-bottom: solid 5px white;
+    border-bottom: solid 5px #F5F2E7;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px; }
 
 @media (min-width: 768px) {
   #nosotros .main_article--odontologos {
-    width: 90%;
-    display: flex;
-    margin-bottom: 25px;
-    padding: 15px; } }
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #nosotros .main_article--odontologos p {
+      font-size: 2.5rem; } }
 
 @media (min-width: 1200px) {
   #nosotros .main_article--odontologos {
-    margin-top: 35px;
-    margin-bottom: 35px; }
+    display: flex; }
+    #nosotros .main_article--odontologos img {
+      width: 100%; }
     #nosotros .main_article--odontologos p {
-      font-size: 2.7rem;
-      padding: 20px;
-      margin: 10px 25px; } }
+      font-size: 1.6rem;
+      width: 100%;
+      padding: 25px; } }
 
 #consultorio {
   font-family: "Poppins", sans-serif; }
@@ -344,11 +539,78 @@ footer {
   #agenda-ahora h5 {
     font-size: 2.5em;
     color: #2666CF; }
+  #agenda-ahora .caja_comentarios--pacientes p {
+    text-align: center;
+    color: #F5F2E7;
+    font-size: 2.5em; }
   #agenda-ahora .card p {
     font-size: 2em;
     color: #F5F2E7; }
   #agenda-ahora .fondo_cards {
     background-color: rgba(0, 0, 0, 0.5); }
+  #agenda-ahora .caja_tamaño--pacientes {
+    width: 50%; }
+  #agenda-ahora .boton_comentarios {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #F5F2E7;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    text-align: center;
+    width: 100%; }
+    #agenda-ahora .boton_comentarios:hover {
+      background-color: #395B64;
+      box-shadow: 0 0 10px #395B64, 0 0 40px #395B64, 0 0 80px #395B64;
+      transition-delay: 1s; }
+      #agenda-ahora .boton_comentarios:hover #span1 {
+        left: 100%;
+        transition: 1s; }
+      #agenda-ahora .boton_comentarios:hover #span3 {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s; }
+      #agenda-ahora .boton_comentarios:hover #span2 {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s; }
+      #agenda-ahora .boton_comentarios:hover #span4 {
+        bottom: 100%;
+        transition: 1seg;
+        transition-delay: 0.75s; }
+    #agenda-ahora .boton_comentarios span {
+      position: absolute;
+      display: block; }
+    #agenda-ahora .boton_comentarios #span1 {
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #395B64); }
+    #agenda-ahora .boton_comentarios #span3 {
+      bottom: 0;
+      right: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, #395B64); }
+    #agenda-ahora .boton_comentarios #span2 {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, #395B64); }
+    #agenda-ahora .boton_comentarios #span4 {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, #395B64); }
+
+.botons_form {
+  margin: 5px; }
 
 .imagen_form {
   height: 100%;
