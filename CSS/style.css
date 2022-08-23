@@ -114,7 +114,7 @@ footer {
     font-size: 2.5rem;
     margin-right: 20px; } }
 
-.diseño_title--h2, #nosotros h2, #consultorio h2, #preguntas-frecuentes h2, #agenda-ahora h2 {
+.diseño_title--h1, #tratamientos h1, #nosotros h1, #consultorio h1, #preguntas-frecuentes h1, #agenda-ahora h1 {
   font-size: 4rem;
   padding: 10px;
   text-align: center;
@@ -307,12 +307,6 @@ footer {
 
 #tratamientos {
   font-family: "Roboto", sans-serif; }
-  #tratamientos h1 {
-    font-size: 4rem;
-    text-align: center;
-    color: #DDDDDD;
-    margin-top: 10px;
-    margin-bottom: 20px; }
   #tratamientos .tratamientos-especificos {
     display: flex;
     flex-direction: column;
@@ -556,7 +550,8 @@ footer {
     padding: 5px 10px;
     color: #F5F2E7;
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: 2.2rem;
+    font-weight: 900;
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;

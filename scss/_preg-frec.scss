@@ -1,8 +1,8 @@
 #preguntas-frecuentes {
     font-family: $fontMain;
 
-    h2 {
-        @extend .diseño_title--h2;
+    h1 {
+        @extend .diseño_title--h1;
     }
 
     h3 {

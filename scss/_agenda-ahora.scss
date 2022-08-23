@@ -5,8 +5,8 @@
         background-color: map-get($blacks, $key: "cinco");
     }
 
-    h2 {
-        @extend .diseño_title--h2;
+    h1 {
+        @extend .diseño_title--h1;
     }
 
     form {
@@ -66,7 +66,8 @@
         padding: 5px 10px;
         color: $colorTextos;
         letter-spacing: 2px;
-        font-size: 24px;
+        font-size: 2.2rem;
+        font-weight: 900;
         text-decoration: none;
         overflow: hidden;
         transition: 0.2s;

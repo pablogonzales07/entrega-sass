@@ -20,11 +20,8 @@
     font-family: $fontSecond;
 
     h1 {
-        font-size: $tamañoTitulos;
-        text-align: center;
-        color: $colorTitulos;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        @extend .diseño_title--h1;
+
     }
 
     .tratamientos-especificos {
